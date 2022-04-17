@@ -2,6 +2,7 @@ package io.github.ytam.githubusers.data.remote
 
 import io.github.ytam.githubusers.domain.model.User
 import io.github.ytam.githubusers.domain.model.UserDetail
+import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -23,5 +24,5 @@ interface GithubApi {
     @GET("/users/{username}")
     suspend fun getUserByUsername(
         @Path("username") username: String,
-    ): UserDetail
+    ): Flow<UserDetail>
 }

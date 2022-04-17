@@ -32,6 +32,6 @@ class UserRemoteDataSourceImpl(
         ).flow
     }
 
-    override suspend fun getUserDetailsByUsername(username: String): UserDetail =
+    override suspend fun getUserDetailsByUsername(username: String): Flow<UserDetail> =
         githubApi.getUserByUsername(username)
 }

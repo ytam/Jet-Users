@@ -13,6 +13,6 @@ class UserRepositoryImpl(
 
     override fun getAllUser(): Flow<PagingData<User>> = userRemoteDataSource.getUserList()
 
-    override suspend fun getUserDetailsByUsername(username: String): UserDetail =
+    override suspend fun getUserDetailsByUsername(username: String): Flow<UserDetail> =
         userRemoteDataSource.getUserDetailsByUsername(username)
 }

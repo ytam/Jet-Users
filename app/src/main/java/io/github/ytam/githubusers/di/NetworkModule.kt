@@ -7,12 +7,12 @@ import dagger.hilt.components.SingletonComponent
 import io.github.ytam.githubusers.BuildConfig
 import io.github.ytam.githubusers.common.Constants
 import io.github.ytam.githubusers.data.remote.GithubApi
-import okhttp3.OkHttpClient
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 @Module
 @InstallIn(SingletonComponent::class)

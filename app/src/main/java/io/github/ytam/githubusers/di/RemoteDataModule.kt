@@ -14,6 +14,9 @@ import io.github.ytam.githubusers.data.repository.datasourceimpl.UserRemoteDataS
 object RemoteDataModule {
 
     @Provides
-    fun provideUserRemoteDataSource(githubApi: GithubApi, userDatabase: UserDatabase): UserRemoteDataSource =
+    fun provideUserRemoteDataSource(
+        githubApi: GithubApi,
+        userDatabase: UserDatabase
+    ): UserRemoteDataSource =
         UserRemoteDataSourceImpl(githubApi, userDatabase = userDatabase)
 }

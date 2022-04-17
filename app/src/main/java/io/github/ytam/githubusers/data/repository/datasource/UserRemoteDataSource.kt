@@ -8,5 +8,5 @@ import kotlinx.coroutines.flow.Flow
 interface UserRemoteDataSource {
     fun getUserList(): Flow<PagingData<User>>
 
-    suspend fun getUserDetailsByUsername(username: String): UserDetail
+    suspend fun getUserDetailsByUsername(username: String): Flow<UserDetail>
 }

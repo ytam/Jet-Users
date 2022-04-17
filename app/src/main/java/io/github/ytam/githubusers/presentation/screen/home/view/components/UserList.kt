@@ -29,7 +29,6 @@ import androidx.paging.compose.items
 import coil.compose.rememberImagePainter
 import coil.size.Scale
 import io.github.ytam.githubusers.domain.model.User
-import io.github.ytam.githubusers.presentation.navigation.Screen
 import io.github.ytam.githubusers.presentation.theme.ItemBackgroundColor
 
 @Composable
@@ -65,7 +64,7 @@ fun UserListItem(user: User, navController: NavHostController) {
                 .height(IntrinsicSize.Max)
                 .fillMaxWidth()
                 .clickable {
-                    navController.navigate(route = Screen.UserDetails.passUsername(user.login ?: ""))
+                    navController.navigate("details_screen/${user.login}")
                 },
             verticalAlignment = Alignment.CenterVertically
         ) {

@@ -16,12 +16,14 @@ object DatabaseModule {
 
     @Provides
     fun provideDatabase(app: Application): UserDatabase =
-        Room.databaseBuilder(app, UserDatabase::class.java, "user_db").fallbackToDestructiveMigration()
+        Room.databaseBuilder(app, UserDatabase::class.java, "user_db")
+            .fallbackToDestructiveMigration()
             .build()
 
     @Provides
     fun provideUserDao(userDB: UserDatabase): UserDao = userDB.userDao()
 
     @Provides
-    fun provideUserRemoteKeysDao(userDB: UserDatabase): UserRemoteKeysDao = userDB.userRemoteKeysDao()
+    fun provideUserRemoteKeysDao(userDB: UserDatabase): UserRemoteKeysDao =
+        userDB.userRemoteKeysDao()
 }

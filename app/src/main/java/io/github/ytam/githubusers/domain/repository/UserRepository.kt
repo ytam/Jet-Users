@@ -9,5 +9,5 @@ interface UserRepository {
 
     fun getAllUser(): Flow<PagingData<User>>
 
-    suspend fun getUserDetailsByUsername(username: String): UserDetail
+    suspend fun getUserDetailsByUsername(username: String): Flow<UserDetail>
 }
