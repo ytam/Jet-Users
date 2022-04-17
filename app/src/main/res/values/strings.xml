@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GithubUsers</string>
+    <string name="app_name">Jet Users</string>
     <string name="user_avatar_desc">User avatar image</string>
     <string name="followers">Followers</string>
     <string name="followings">Followings</string>

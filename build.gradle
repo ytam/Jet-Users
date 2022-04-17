@@ -9,7 +9,7 @@ buildscript {
         lifecycle_version = "2.4.1"
         retrofit_version = "2.9.0"
         coroutine_version = "1.6.0"
-
+        okhttp_version = "4.9.0"
         paging_version = "3.1.0"
     }
 

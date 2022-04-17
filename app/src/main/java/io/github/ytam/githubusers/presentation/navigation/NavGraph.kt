@@ -19,17 +19,14 @@ fun NavGraph(navController: NavHostController) {
         composable(route = Screen.Home.route) {
             HomeScreen(navController = navController)
         }
-
         composable(
-            route = Screen.Details.route,
-            arguments = listOf(
-                navArgument(Constants.USER_DETAILS) {
-                    type = NavType.StringType
-                }
-            )
+            route = Screen.UserDetails.route,
+            arguments = listOf(navArgument(Constants.USER_DETAILS) {
+                type = NavType.StringType
+            })
         ) { backStackEntry ->
             backStackEntry.arguments?.getString(Constants.USER_DETAILS)
-                ?.let { DetailsScreen(it, navController) }
+                ?.let { DetailsScreen(it,navController) }
         }
     }
 }

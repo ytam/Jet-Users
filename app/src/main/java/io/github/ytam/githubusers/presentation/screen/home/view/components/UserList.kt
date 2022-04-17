@@ -65,7 +65,7 @@ fun UserListItem(user: User, navController: NavHostController) {
                 .height(IntrinsicSize.Max)
                 .fillMaxWidth()
                 .clickable {
-                    navController.navigate(route = Screen.Details.passUsername(user.login ?: ""))
+                    navController.navigate(route = Screen.UserDetails.passUsername(user.login ?: ""))
                 },
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -91,8 +91,8 @@ fun UserListItem(user: User, navController: NavHostController) {
                     .fillMaxWidth()
                     .align(Alignment.CenterVertically)
             ) {
-                Text(text = user.login ?: "", style = typography.h6)
-                Text(text = user.login ?: "", style = typography.caption)
+                Text(text = user.login ?: "-", style = typography.h6)
+                Text(text = user.user ?: "-", style = typography.caption)
             }
         }
     }

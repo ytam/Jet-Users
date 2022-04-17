@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">  
-Jet-Users is a simple app based on Jetpack Compose, modern tech-stack and Clean Architecture. The project is quite simple which shows the list of github users and their general info details gets from API.
+Jet-Users is a simple app based on Jetpack Compose, modern tech-stack and Clean Architecture. The project is quite simple which shows the list of github users and their general info details gets from [https://api.github.com/users](https://api.github.com/users) API.
 </p>
 
 
