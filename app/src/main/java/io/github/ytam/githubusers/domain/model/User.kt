@@ -15,6 +15,6 @@ data class User(
     val login: String?,
     @SerializedName("avatar_url")
     val avatarUrl: String?,
-    @SerializedName("user")
-    val user: String?
+    @SerializedName("type")
+    val type: String?
 ) : Serializable

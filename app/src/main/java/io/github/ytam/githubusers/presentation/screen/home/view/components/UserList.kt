@@ -91,7 +91,7 @@ fun UserListItem(user: User, navController: NavHostController) {
                     .align(Alignment.CenterVertically)
             ) {
                 Text(text = user.login ?: "-", style = typography.h6)
-                Text(text = user.user ?: "-", style = typography.caption)
+                Text(text = user.type ?: "-", style = typography.caption)
             }
         }
     }
