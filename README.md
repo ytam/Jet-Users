@@ -9,6 +9,11 @@ Jet-Users is a simple app based on Jetpack Compose, modern tech-stack and Clean 
 </p>
 
 
+ <p align="center">
+  <img src="./arts/preview.png">
+</p>
+
+
 ## Tech stack
 * ✅ Clean Architecture
 * ✅ Repository pattern
